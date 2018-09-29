@@ -1,24 +1,33 @@
-# CSCI 3601 Production Template -- Spring 2018
-[![Build Status](https://travis-ci.org/UMM-CSci-3601/production-template-S18.svg?branch=master)](https://github.com/UMM-CSci-3601/production-template-S18)
+# UMM Pollinators Project
+<i>Readme last updated: 9/29/2018</i>
 
+<!--
+[![Build Status](https://travis-ci.org/UMM-CSci-3601/production-template-S18.svg?branch=master)](https://github.com/UMM-CSci-3601/production-template-S18)
+-->
 
 <!-- TOC depthFrom:1 depthTo:5 withLinks:1 updateOnSave:1 orderedList:0 -->
 ## Table of Contents
+- [About](#about)
 - [Setup](#setup)
 - [Running your project](#running-your-project)
 - [Deploying Project for Production](#deploying-project-for-production)
 - [Testing and Continuous Integration](#testing-and-continuous-integration)
 - [Resources](#resources)
-	- [Angular 4](#angular-4)
+	- [Angular 5](#angular-5)
 	- [SparkJava](#sparkjava)
 	- [MongoDB](#mongodb)
 
 <!-- /TOC -->
 
+## About
+
+<!-- This readme is a work in progress -->
+This project aims to inform people about the University's effort to restore native habitat,
+while also providing information to the public about how they can help pollinators.
+
 ## Setup
 
-As in the labs, you'll be using IntelliJ. Once you've all joined your
-group using GitHub classroom, you can clone your repository using IntelliJ:
+I've left the setup instructions on here from the class in case they come in handy - Matt
 
 - When prompted to create a new IntelliJ project, select **yes**.
 - Select **import project from existing model** and select **Gradle.**

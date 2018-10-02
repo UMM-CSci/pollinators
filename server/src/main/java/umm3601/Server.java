@@ -4,6 +4,8 @@ import com.mongodb.MongoClient;
 import com.mongodb.client.MongoDatabase;
 import spark.Request;
 import spark.Response;
+import umm3601.nugget.NuggetController;
+import umm3601.nugget.NuggetRequestHandler;
 import umm3601.user.UserController;
 import umm3601.user.UserRequestHandler;
 
@@ -14,16 +16,18 @@ import static spark.Spark.*;
 import static spark.debug.DebugScreen.enableDebugScreen;
 
 public class Server {
-    private static final String userDatabaseName = "dev";
+    private static final String DATABASE_NAME = "dev";
     private static final int serverPort = 4567;
 
     public static void main(String[] args) throws IOException {
 
         MongoClient mongoClient = new MongoClient();
-        MongoDatabase userDatabase = mongoClient.getDatabase(userDatabaseName);
+        MongoDatabase database = mongoClient.getDatabase(DATABASE_NAME);
 
-        UserController userController = new UserController(userDatabase);
+        UserController userController = new UserController(database);
         UserRequestHandler userRequestHandler = new UserRequestHandler(userController);
+        NuggetController nuggetController = new NuggetController(database);
+        NuggetRequestHandler nuggetRequestHandler = new NuggetRequestHandler(nuggetController);
 
         //Configure Spark
         port(serverPort);
@@ -55,6 +59,10 @@ public class Server {
 
         // Redirects for the "home" page
         redirect.get("", "/");
+
+        /// Nugget Endpoints ////////////////////////
+        /////////////////////////////////////////////
+        get("api/nuggets", nuggetRequestHandler::getNuggets);
 
         /// User Endpoints ///////////////////////////
         /////////////////////////////////////////////

@@ -1,0 +1,41 @@
+.mat-card {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#welcome {
+    font-size: 50px;
+    text-align: center;
+    padding-top: 50px;
+    font-family: AntykwaTorunska;
+}
+
+#sub-welcome {
+    text-align: center;
+    font-size: 20px;
+}
+
+#card {
+    background-image: url("../../assets/bee-705412_960_720_1325x500.png");
+    min-height: 500px;
+    margin-top: 10px;
+}
+
+#nugget {
+    text-align: center;
+    font-size: 20px;
+    padding-top: 30px;
+}
+
+#nug-card {
+    min-height: 100px;
+}
+
+#back-nug-card {
+    background-color: #FEFCAD;
+}
+
+/*#introPic {*/
+    /*width: 100%;*/
+    /*max-height: 300px;*/
+/*}*/

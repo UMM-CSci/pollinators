@@ -14,6 +14,7 @@ import {APP_BASE_HREF} from '@angular/common';
 
 import {CustomModule} from './custom.module';
 import {AddUserComponent} from './users/add-user.component';
+import {HomeService} from "./home/home.service";
 
 
 @NgModule({
@@ -31,6 +32,7 @@ import {AddUserComponent} from './users/add-user.component';
     ],
     providers: [
         UserListService,
+        HomeService,
         {provide: APP_BASE_HREF, useValue: '/'},
         {provide: MATERIAL_COMPATIBILITY_MODE, useValue: true}
     ],

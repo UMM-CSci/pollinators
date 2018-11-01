@@ -20,7 +20,7 @@ task seedUserData(type: Exec) {
 
 task seedNuggetData(type: Exec) {
     executable = "mongoimport"
-    args = ["-d", "dev", "-c", "nuggets", "--file", "nuggets.seed.csv", "--type", "csv", "--headerline", "--ignoreBlanks"]
+    args = ["-d", "dev", "-c", "nuggets", "--file", "nuggets.seed.csv", "--type", "csv", "--headerline"]
 }
 
 task seedMongoDB {

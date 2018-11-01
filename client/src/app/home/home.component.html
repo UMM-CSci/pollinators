@@ -8,7 +8,11 @@
         </mat-card>
         <mat-card>
             <mat-card-content id="back-nug-card">
-                <mat-card id="nug-card"><mat-card-content id="nugget">{{this.nugget}}</mat-card-content></mat-card>
+                <mat-card id="nug-card">
+                    <mat-card-content id="nugget">{{this.nugget.info}}</mat-card-content>
+                    <mat-divider></mat-divider>
+                    <mat-card-footer>{{this.nugget.source}}</mat-card-footer>
+                </mat-card>
             </mat-card-content>
         </mat-card>
     </div>

@@ -1,41 +1,37 @@
-.mat-card {
-    margin-top: 0px;
-    margin-bottom: 0px;
-}
-
 #welcome {
-    font-size: 50px;
+    font-size: 200%;
     text-align: center;
-    padding-top: 50px;
     font-family: AntykwaTorunska;
-}
-
-#sub-welcome {
-    text-align: center;
-    font-size: 20px;
-}
-
-#card {
-    background-image: url("../../assets/bee-705412_960_720_1325x500.png");
-    min-height: 500px;
-    margin-top: 10px;
 }
 
 #nugget {
     text-align: center;
-    font-size: 20px;
-    padding-top: 30px;
+    font-size: 18px;
+    padding-right: 5%;
+    min-height: 160px;
 }
 
-#nug-card {
-    min-height: 100px;
-}
-
-#back-nug-card {
-    background-color: #FEFCAD;
-}
-
-/*#introPic {*/
-    /*width: 100%;*/
-    /*max-height: 300px;*/
+/*#nug-card {*/
+    /*min-height: 100px;*/
+    /*background: transparent;*/
 /*}*/
+
+#source{
+    /*background-image: url("../../assets/footer-bee.png");*/
+    /*background-size: 100%;*/
+    /*min-height: 90px;*/
+    text-align: center;
+    font-size: 15px;
+    padding-top: 10px;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: lightgreen;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}

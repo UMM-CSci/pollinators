@@ -1,20 +1,25 @@
 <div layout-gt-sm="row">
     <div flex-gt-sm="80" flex-offset-gt-sm="10">
-        <mat-card id="card">
-            <!--<img id="introPic" src="../../assets/800px-VioletPrairieFlower.png">-->
-            <mat-card-title id="welcome">Welcome!</mat-card-title>
-            <mat-card-subtitle id="sub-welcome">Here you can learn about bees and other pollinators</mat-card-subtitle>
-            <!--<mat-divider></mat-divider>-->
-        </mat-card>
         <mat-card>
-            <mat-card-content id="back-nug-card">
-                <mat-card id="nug-card">
-                    <mat-card-content id="nugget">{{this.nugget.info}}
-                    <mat-divider></mat-divider>
-                    <mat-card-footer>Source: <a href="{{this.nugget.source}}">{{this.nugget.source}}</a></mat-card-footer>
+            <mat-card-title id="welcome">Pollinator Fact:</mat-card-title>
+            <mat-divider></mat-divider>
+            <!--<mat-card-content id="back-nug-card">-->
+                <!--<mat-card id="nug-card">-->
+                    <mat-card-content id="nugget">
+                        {{this.nugget.info}}
+                        <mat-card-footer id="source">Source: <a href="{{this.nugget.source}}">link</a></mat-card-footer>
+
                     </mat-card-content>
-                </mat-card>
+                <!--</mat-card>-->
+            <!--</mat-card-content>-->
+        </mat-card>
+
+        <mat-card>
+            <mat-card-content>
+                To learn more about the project go <a href="https://wcroc.cfans.umn.edu/restoring-native-prairie">here</a>
             </mat-card-content>
         </mat-card>
+
+        <mat-grid-tile-footer class="footer">FUNDING! Thanking Blurb!</mat-grid-tile-footer>
     </div>
 </div>

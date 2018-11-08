@@ -14,16 +14,25 @@ export class HomeComponent implements OnInit {
 
     }
 
+    public getNugget(): Nugget {
+        if (this.nuggets != null) {
+            const index = Math.floor(Math.random() * this.nuggets.length);
+            return this.nugget = this.nuggets[index];
+        }
+        return (this.nugget = { _id: null, info: '', source: '', image_location: '' });
+    }
+
     ngOnInit() {
-        this.homeService.getNuggets().subscribe(
-            nuggets => {
-                this.nuggets = nuggets;
-                const index = Math.floor(Math.random() * this.nuggets.length);
-                this.nugget = this.nuggets[index];
-            },
-            err => {
-                console.log(err);
-            }
-        );
+        // if () {
+            this.homeService.getNuggets().subscribe(
+                (nuggets: Nugget[]) => {
+                    this.nuggets = nuggets;
+                    this.getNugget();
+                },
+                err => {
+                    console.log(err);
+                }
+            );
+        // }
     }
 }

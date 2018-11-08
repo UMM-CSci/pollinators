@@ -1,3 +1,4 @@
+
 #welcome {
     font-size: 200%;
     text-align: center;
@@ -8,18 +9,15 @@
     text-align: center;
     font-size: 18px;
     padding-right: 5%;
-    min-height: 160px;
+    min-height: 180px;
+
+    background-image: url("../../assets/background_bee.png");
+    background-size: 100%;
+
 }
 
-/*#nug-card {*/
-    /*min-height: 100px;*/
-    /*background: transparent;*/
-/*}*/
-
 #source{
-    /*background-image: url("../../assets/footer-bee.png");*/
-    /*background-size: 100%;*/
-    /*min-height: 90px;*/
+    min-height: 50px;
     text-align: center;
     font-size: 15px;
     padding-top: 10px;
@@ -34,4 +32,11 @@
     color: white;
     text-align: center;
     padding: 10px;
+}
+
+@media screen and (min-width: 700px) {
+    #nugget{
+        background-image: none;
+        min-height: 0px;
+    }
 }

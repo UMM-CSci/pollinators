@@ -1,6 +1,6 @@
 <div layout-gt-sm="row">
     <div flex-gt-sm="80" flex-offset-gt-sm="10">
-        <mat-card id="ihateyou">
+        <mat-card>
             <mat-card-title id="welcome">Pollinator Fact:</mat-card-title>
             <mat-divider></mat-divider>
             <!--<mat-card-content id="back-nug-card">-->
@@ -14,13 +14,13 @@
                 <!--</mat-card>-->
             <!--</mat-card-content>-->
         </mat-card>
-        <mat-card id="image"></mat-card>
+        <button class="buttons" mat-raised-button (click)="this.getNugget()">Dig Deeper!</button>
         <mat-card>
             <mat-card-content>
                 To learn more about the project go <a href="https://wcroc.cfans.umn.edu/restoring-native-prairie">here</a>
             </mat-card-content>
         </mat-card>
 
-        <mat-grid-tile-footer class="footer">FUNDING! Thanking Blurb!</mat-grid-tile-footer>
+        <mat-grid-tile-footer class="footer">Funding provided by the Minnesota Environment and Natural Resources Trust Fund</mat-grid-tile-footer>
     </div>
 </div>

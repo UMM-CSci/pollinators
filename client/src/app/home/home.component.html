@@ -1,6 +1,6 @@
 <div layout-gt-sm="row">
     <div flex-gt-sm="80" flex-offset-gt-sm="10">
-        <mat-card>
+        <mat-card id="info">
             <mat-card-title id="welcome">Pollinator Fact:</mat-card-title>
             <mat-divider></mat-divider>
             <!--<mat-card-content id="back-nug-card">-->
@@ -14,7 +14,17 @@
                 <!--</mat-card>-->
             <!--</mat-card-content>-->
         </mat-card>
-        <button class="buttons" mat-raised-button (click)="this.getNugget()">Dig Deeper!</button>
+
+        <mat-card id="dig-deeper">
+            <mat-divider></mat-divider>
+            <mat-card-title>Dig Deeper!</mat-card-title>
+            <mat-card-content class="buttons">
+                <button class="button" mat-raised-button (click)="this.getNextNugget()">Behavior</button>
+                <button class="button" mat-raised-button (click)="this.getNextNugget()">Habitat</button>
+                <button class="button" mat-raised-button (click)="this.getNextNugget()">Home Tips</button>
+            </mat-card-content>
+        </mat-card>
+
         <mat-card>
             <mat-card-content>
                 To learn more about the project go <a href="https://wcroc.cfans.umn.edu/restoring-native-prairie">here</a>

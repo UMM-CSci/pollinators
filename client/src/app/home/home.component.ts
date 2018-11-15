@@ -9,6 +9,7 @@ import {HomeService} from "./home.service";
 export class HomeComponent implements OnInit {
     public nugget: Nugget;
     public nuggets: Nugget[];
+    public currentNuggetIndex: number;
 
     constructor(public homeService: HomeService) {
 
@@ -17,9 +18,20 @@ export class HomeComponent implements OnInit {
     public getNugget(): Nugget {
         if (this.nuggets != null) {
             const index = Math.floor(Math.random() * this.nuggets.length);
-            return this.nugget = this.nuggets[index];
+            this.currentNuggetIndex = index;
+            return this.nugget = this.nuggets[this.currentNuggetIndex];
         }
         return (this.nugget = { _id: null, info: '', source: '', image_location: '' });
+    }
+
+    public getNextNugget(): Nugget {
+        if(this.currentNuggetIndex != this.nuggets.length-1){
+            this.currentNuggetIndex = this.currentNuggetIndex + 1;
+        } else {
+            this.currentNuggetIndex = 0;
+        }
+
+        return this.nugget = this.nuggets[this.currentNuggetIndex];
     }
 
     ngOnInit() {

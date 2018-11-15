@@ -12,8 +12,34 @@ $accent:  mat-palette($mat-amber, 500);
 // The warn palette is optional (defaults to red).
 $warn:    mat-palette($mat-red);
 
+// Background palette for light themes.
+$mat-light-theme-background-pollen: (
+    status-bar: map_get($mat-grey, 300),
+    app-bar:    map_get($mat-light-green, 100),
+    background: black,
+    hover:      rgba(black, 0.04), // TODO(kara): check style with Material Design UX
+    card:       white,
+    dialog:     white,
+    disabled-button: $black-12-opacity,
+    raised-button: white,
+    focused-button: $black-6-opacity,
+    selected-button: map_get($mat-grey, 300),
+    selected-disabled-button: map_get($mat-grey, 400),
+    disabled-button-toggle: map_get($mat-grey, 200),
+    unselected-chip: map_get($mat-grey, 300),
+    disabled-list-option: map_get($mat-grey, 200),
+);
+
 // Create the theme object (a Sass map containing all of the palettes).
-$theme: mat-light-theme($primary, $accent, $warn);
+$theme: (
+primary: $primary,
+accent: $accent,
+warn: $warn,
+is-dark: false,
+foreground: $mat-light-theme-foreground,
+background: $mat-light-theme-background-pollen,
+);
+
 
 // Include theme styles for core and each component used in your app.
 // Alternatively, you can import and @include the theme mixins for each component

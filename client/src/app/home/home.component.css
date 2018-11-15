@@ -37,7 +37,8 @@
 .footer {
     position: fixed;
     left: 0;
-    bottom: 0;
+    right: 0;
+    bottom: 3%;
     width: 100%;
     background-color: #80BC2D;
     text-align: center;
@@ -50,6 +51,10 @@
     background-color: gold;
     /*left: 35%;*/
 
+}
+
+#projectLink {
+    margin-bottom: 80px;
 }
 
 @media screen and (min-width: 420px) {

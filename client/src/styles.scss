@@ -9,3 +9,89 @@
     color: mat-color($accent) !important;
 }
 
+.panda {
+    --main: #e3f2fd;
+    --accent: #FFFFFF;
+    --sidebar: #546E7A;
+    --navbar: #03A9F4;
+    --alttxt: #FFFFFF;
+
+
+    height: 100vh;
+    background-color: var(--main);
+    .content{
+        background-color: var(--main);
+        *{
+            .sidenav {
+                background-color: var(--sidebar);
+            }
+        }
+    }
+
+    .mat-toolbar{
+        background-color: var(--navbar);
+    }
+    form{
+        background-color: var(--accent);
+    }
+    .mat-card{
+        background-color: var(--accent);
+    }
+    .mat-card-header{
+        background-color: var(--accent);
+    }
+    .mat-card-content{
+        background-color: var(--accent);
+    }
+    .mat-stepper-horizontal {
+        background-color: var(--accent);
+    }
+
+    .journal-card {
+        .mat-card-content{
+            background-color: var(--accent);
+        }
+        .journal-details{
+            background-color: var(--accent);
+        }
+    }
+
+    .alt-color{
+        color: var(--alttxt);
+    }
+    .computer{
+        color: var(--alttxt);
+    }
+
+    .main{
+        background-color: var(--main);
+    }
+    .accent{
+        background-color: var(--accent);
+    }
+    .sidebar{
+        background-color: var(--sidebar);
+    }
+    .navbar{
+        background-color: var(--navbar);
+    }
+
+    .material-icons {
+        font-family: 'Material Icons';
+        font-weight: normal;
+        font-style: normal;
+        font-size: 24px;
+        line-height: 1;
+        letter-spacing: normal;
+        text-transform: none;
+        display: inline-block;
+        white-space: nowrap;
+        word-wrap: normal;
+        direction: ltr;
+        -webkit-font-feature-settings: 'liga';
+        -webkit-font-smoothing: antialiased;
+    }
+}
+
+
+

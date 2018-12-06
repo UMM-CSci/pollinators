@@ -19,9 +19,9 @@
             <mat-divider></mat-divider>
             <mat-card-title>Dig Deeper!</mat-card-title>
             <mat-card-content class="buttons">
-                <button class="button" mat-raised-button (click)="this.getNextNugget()">Behavior</button>
-                <button class="button" mat-raised-button (click)="this.getNextNugget()">Habitat</button>
-                <button class="button" mat-raised-button (click)="this.getNextNugget()">Home Tips</button>
+                <button color="accent" class="button" mat-raised-button (click)="this.getNextNugget()">Behavior</button>
+                <button color="accent" class="button" mat-raised-button (click)="this.getNextNugget()">Habitat</button>
+                <button color="accent" class="button" id="last-button" mat-raised-button (click)="this.getNextNugget()">Home Tips</button>
             </mat-card-content>
         </mat-card>
 
@@ -31,6 +31,6 @@
             </mat-card-content>
         </mat-card>
 
-        <mat-card-footer class="footer">Funding provided by the Minnesota Environment and Natural Resources Trust Fund</mat-card-footer>
+        <mat-card-footer color="primary" class="footer">Funding provided by the Minnesota Environment and Natural Resources Trust Fund</mat-card-footer>
     </div>
 </div>

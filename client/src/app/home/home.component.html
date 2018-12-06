@@ -7,8 +7,9 @@
                 <!--<mat-card id="nug-card">-->
                     <mat-card-content id="nugget">
                         <p>{{this.nugget.info}}</p>
-                        <mat-card-footer id="source">Source: <a href="{{this.nugget.source}}">link</a></mat-card-footer>
-
+                        <mat-card-footer id="source">
+                            Source: <a href="{{this.nugget.source}}">link</a>
+                        </mat-card-footer>
                     </mat-card-content>
 
                 <!--</mat-card>-->
@@ -18,10 +19,11 @@
         <mat-card id="dig-deeper">
             <mat-divider></mat-divider>
             <mat-card-title>Dig Deeper!</mat-card-title>
+            <mat-card-subtitle>Click a button to get a fact from that category!</mat-card-subtitle>
             <mat-card-content class="buttons">
-                <button class="button" mat-raised-button (click)="this.getNextNugget()">Behavior</button>
-                <button class="button" mat-raised-button (click)="this.getNextNugget()">Habitat</button>
-                <button class="button" mat-raised-button (click)="this.getNextNugget()">Home Tips</button>
+                <button class="button" mat-raised-button (click)="this.getBehaviorNugget()">Behavior</button>
+                <button class="button" mat-raised-button (click)="this.getHabitatNugget()">Habitat</button>
+                <button class="button" mat-raised-button (click)="this.getHomeTipsNugget()">Home Tips</button>
             </mat-card-content>
         </mat-card>
 

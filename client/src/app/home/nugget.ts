@@ -3,4 +3,5 @@ export interface Nugget {
     info: string;
     source: string;
     image_location: string;
+    category: string;
 }

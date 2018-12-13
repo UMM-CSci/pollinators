@@ -20,10 +20,6 @@
     text-align: center;
     font-size: 18px;
     min-height: 180px;
-
-    /*background-image: url("../../assets/background_bee.png");*/
-    /*background-size: 100%;*/
-
 }
 
 #source{
@@ -39,30 +35,36 @@
     right: 0;
     bottom: 3%;
     width: 100%;
-    background-color: #80BC2D;
+    background-color: #827d28;
     text-align: center;
     padding: 15px;
 }
 
 .button {
     border:1.25px solid black;
-    /*border-radius: 100px 100px 100px 100px;*/
-    background-color: gold;
-    /*left: 35%;*/
-
 }
 
 #projectLink {
     margin-bottom: 80px;
 }
 
-@media screen and (min-width: 420px) {
+@media screen and (min-width: 300px) {
+    .button {
+        margin-right: 2%;
+    }
+
+    #last-button {
+        margin-right: auto;
+    }
+}
+
+@media screen and (min-width: 400px) {
     #nugget{
         background-image: none;
         min-height: 0px;
     }
 
-    .buttons {
-        left: 43%;
+    .button {
+        margin-right:10%;
     }
 }

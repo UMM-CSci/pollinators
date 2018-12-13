@@ -31,10 +31,10 @@
 
 .footer {
     position: fixed;
-    left: 0;
-    right: 0;
+    left: 15px;
+    right: 15px;
     bottom: 3%;
-    width: 100%;
+    width: auto;
     background-color: #827d28;
     text-align: center;
     padding: 15px;
@@ -68,3 +68,14 @@
         margin-right:10%;
     }
 }
+
+@media screen and (max-width: 350px) {
+
+    .button {
+        margin-right:0;
+        padding-left: 5px;
+        padding-right: 5px;
+
+    }
+}
+

@@ -6,8 +6,6 @@ import spark.Request;
 import spark.Response;
 import umm3601.nugget.NuggetController;
 import umm3601.nugget.NuggetRequestHandler;
-import umm3601.user.UserController;
-import umm3601.user.UserRequestHandler;
 
 import java.io.IOException;
 
@@ -24,8 +22,6 @@ public class Server {
         MongoClient mongoClient = new MongoClient();
         MongoDatabase database = mongoClient.getDatabase(DATABASE_NAME);
 
-        UserController userController = new UserController(database);
-        UserRequestHandler userRequestHandler = new UserRequestHandler(userController);
         NuggetController nuggetController = new NuggetController(database);
         NuggetRequestHandler nuggetRequestHandler = new NuggetRequestHandler(nuggetController);
 
@@ -63,15 +59,6 @@ public class Server {
         /// Nugget Endpoints ////////////////////////
         /////////////////////////////////////////////
         get("api/nuggets", nuggetRequestHandler::getNuggets);
-
-        /// User Endpoints ///////////////////////////
-        /////////////////////////////////////////////
-
-        //List users, filtered using query parameters
-
-        get("api/users", userRequestHandler::getUsers);
-        get("api/users/:id", userRequestHandler::getUserJSON);
-        post("api/users/new", userRequestHandler::addNewUser);
 
         // An example of throwing an unhandled exception so you can see how the
         // Java Spark debugger displays errors like this.
